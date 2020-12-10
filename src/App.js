@@ -1,7 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import {Analytics} from 'aws-amplify';
+
 function App() {
+  Analytics.record({name: "Home Vist"});
+
+  Analytics.record({
+    name: "Youtube Videos",
+    attributes: {
+      video: "Micro",
+      author: "WDJ"
+    }
+  })
+
+  Analytics.record({
+    name: "Youtube Videos",
+    attributes: {
+      video: "Docker",
+      author: "WDJ"
+    }
+  })
   return (
     <div className="App">
       <header className="App-header">

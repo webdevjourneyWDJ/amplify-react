@@ -5,5 +5,18 @@
       "type": "cicd",
       "lastPushTimeStamp": "2020-12-09T23:35:03.408Z"
     }
+  },
+  "auth": {
+    "cognitoffeedbea": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "analytics": {
+    "amplifyreactapp": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
