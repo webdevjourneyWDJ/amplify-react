@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
 
 import {Analytics} from 'aws-amplify';
+import { useEffect } from 'react';
 
 function App() {
 
   useEffect(() => {
-    // Analytics.record({name: "Home_page_vist"});
-
-    Analytics.autoTrack('pageView', {
-      enable: true,
-      eventName: 'pageView',
-      type: 'SPA',
-      provider: 'AWSPinpoint',
-      getUrl: () => {
-          return window.location.origin + window.location.pathname;
+    Analytics.record('Home page visit')
+    Analytics.record({
+      name: "UserSignIn",
+      attributes: {
+        userName: "WDJ"
       }
-    });
+    })
   }, [])
+
   return (
     <div className="App">
       <header className="App-header">
