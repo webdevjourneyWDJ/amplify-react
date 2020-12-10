@@ -6,6 +6,17 @@
       "lastPushTimeStamp": "2020-12-09T23:35:03.408Z"
     }
   },
-  "auth": {},
-  "analytics": {}
+  "auth": {
+    "cognito87941b8b": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "analytics": {
+    "amplifyreactapp": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
+  }
 }
