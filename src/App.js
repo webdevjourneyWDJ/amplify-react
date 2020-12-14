@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import {Analytics} from 'aws-amplify';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { useEffect } from 'react';
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload. With Amplify
         </p>
+        <AmplifySignOut />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

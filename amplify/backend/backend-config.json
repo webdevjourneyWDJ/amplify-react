@@ -10,7 +10,8 @@
     "cognitob434008b": {
       "service": "Cognito",
       "serviceType": "managed",
-      "providerPlugin": "awscloudformation"
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   },
   "analytics": {
